@@ -17,7 +17,7 @@ export default async function handler(request, response) {
       "mongodb+srv://roushankumarsingh2018:3XMq83a6G6aFoOvS@cluster0.uh9dynj.mongodb.net/apnaDatabase?retryWrites=true&w=majority"
     ); //mongodb+srv://roushankumarsingh2018:<password>@cluster0.uh9dynj.mongodb.net/?retryWrites=true&w=majority connect wants this string
     const db = client.db();
-    const meetupsCollection = db.collection("newName");
+    const meetupsCollection = db.collection("apnaDatabase");
     // mongodb is nosql db that works with collection full of documents,  collection is kind of table in sql database and document could be ur entries in ur tables
 
     const result = await meetupsCollection.insertOne(data) //one of the query commands for inserting one new document into this collection
